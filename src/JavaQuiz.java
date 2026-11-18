@@ -5,6 +5,7 @@ public class JavaQuiz {
         int aciertos=0;
         int opcionMenu;
         char respuesta;
+        int correcta;
         int i=0;
         Scanner sc =new Scanner(System.in);
         final String ROJO = "\u001B[31m";
@@ -42,7 +43,7 @@ public class JavaQuiz {
                             System.out.println(ROJO+"¡Incorrecto!"+RESET);
                             break;
                         case 'B':
-                            int correcta=1;
+                            correcta=1;
                             aciertos=aciertos+correcta;
                             System.out.println(VERDE+"¡Correcto!"+RESET);
                             break;
@@ -54,22 +55,55 @@ public class JavaQuiz {
                         default:
                             System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
                             break;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     }
+                    System.out.println("Pregunta 2. ¿Cuál de las siguientes palabras reservadas se utiliza en Java para declarar una constante (un valor que no puede cambiar)?");
+                    System.out.println("A) constant B) static C) final");
+                    System.out.println("Respuesta: ");
+                    respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
+                    switch (respuesta) {
+                        case 'A':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'B':
+                            
+                            System.out.println(VERDE+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'C':
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(ROJO+"¡Correcto!"+RESET);
+                            
+                            break;
+                    
+                        default:
+                            System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
+                            break;
+                    }
+                    System.out.println("Pregunta 3. ¿Qué operador se utiliza en Java para evaluar si dos valores son estrictamente iguales en una condición?");
+                    System.out.println("A) == B) = C) !=");
+                    System.out.println("Respuesta: ");
+                    respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
+                    switch (respuesta) {
+                        case 'A':
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            break;
+                        case 'B':
+                             System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'C':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            
+                            break;
+                    
+                        default:
+                            System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
+                            break;
+                    }
+
+
+                    
 
 
                     
