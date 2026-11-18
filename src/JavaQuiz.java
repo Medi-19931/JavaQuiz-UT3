@@ -66,12 +66,12 @@ public class JavaQuiz {
                             break;
                         case 'B':
                             
-                            System.out.println(VERDE+"¡Incorrecto!"+RESET);
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
                             break;
                         case 'C':
                             correcta=1;
                             aciertos=aciertos+correcta;
-                            System.out.println(ROJO+"¡Correcto!"+RESET);
+                            System.out.println(VERDE+"¡Correcto!"+RESET);
                             
                             break;
                     
