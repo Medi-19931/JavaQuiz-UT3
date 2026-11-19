@@ -6,7 +6,6 @@ public class JavaQuiz {
         int opcionMenu;
         char respuesta;
         int correcta;
-        int i=0;
         Scanner sc =new Scanner(System.in);
         final String ROJO = "\u001B[31m";
         final String VERDE = "\u001B[32m";
@@ -33,7 +32,7 @@ public class JavaQuiz {
                     System.out.println("Concurso de preguntas sobre Java");
 
                     
-                    System.out.println("--------------------------- RONDA "+(i+1)+" -----------------------------------------------");
+                    System.out.println("--------------------------- RONDA 1 -----------------------------------------------");
                     System.out.println("Pregunta 1. ¿Qué tipo de dato en Java se utiliza principalmente para almacenar números con decimales?");
                     System.out.println("A) int B) float C) boolean");
                     System.out.println("Respuesta: ");
@@ -101,6 +100,81 @@ public class JavaQuiz {
                             System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
                             break;
                     }
+
+                    System.out.println("--------------------------- RONDA 2 -----------------------------------------------");
+        
+                    System.out.println("Pregunta 4. ¿Qué estructura de bucle en Java se utiliza principalmente cuando sabemos exactamente cuántas veces queremos repetir un bloque de código?");
+                    System.out.println("A) while B) for C) do-while");
+                    System.out.println("Respuesta: ");
+                    respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
+                    switch (respuesta) {
+                        case 'A':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'B':
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            break;
+                        case 'C':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            
+                            break;
+                    
+                        default:
+                            System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
+                            break;
+                    }
+                    System.out.println("Pregunta 5. ¿Cómo se denomina en Java a una estructura de datos estática que permite almacenar múltiples elementos del mismo tipo de forma secuencial?");
+                    System.out.println("A) Array B) Scanner C) switch");
+                    System.out.println("Respuesta: ");
+                    respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
+                    switch (respuesta) {
+                        case 'A':
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            
+                            break;
+                        case 'B':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            
+                            break;
+                        case 'C':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            
+                            break;
+                    
+                        default:
+                            System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
+                            break;
+                    }
+                    System.out.println("Pregunta 6. ¿Qué palabra clave se utiliza en la cabecera de un método en Java para indicar que este pertenece a la clase en sí y no necesita una instancia o bjeto para ser ejecutado?");
+                    System.out.println("A) void B) private C) static");
+                    System.out.println("Respuesta: ");
+                    respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
+                    switch (respuesta) {
+                        case 'A':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'B':
+                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            break;
+                        case 'C':
+                            
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            break;
+                    
+                        default:
+                            System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
+                            break;
+                    }
+
+                    System.out.println("============= RESULTADO ==============");
+                    System.out.println("Respuesta correcta: "+aciertos+" de 6.");
+                    System.out.println("Fin del curso.");
 
 
                     
