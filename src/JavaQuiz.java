@@ -103,18 +103,18 @@ public class JavaQuiz {
 
                     System.out.println("--------------------------- RONDA 2 -----------------------------------------------");
         
-                    System.out.println("Pregunta 4. ¿Qué estructura de bucle en Java se utiliza principalmente cuando sabemos exactamente cuántas veces queremos repetir un bloque de código?");
-                    System.out.println("A) while B) for C) do-while");
+                    System.out.println("Pregunta 4. ¿Que almacena boolean?");
+                    System.out.println("A) true/false B) numeros decimales C) cadenas de texto");
                     System.out.println("Respuesta: ");
                     respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
                     switch (respuesta) {
                         case 'A':
-                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
-                            break;
-                        case 'B':
                             correcta=1;
                             aciertos=aciertos+correcta;
                             System.out.println(VERDE+"¡Correcto!"+RESET);
+                            break;
+                        case 'B':
+                            System.out.println(ROJO + "¡Incorrecto" + RESET);
                             break;
                         case 'C':
                             System.out.println(ROJO+"¡Incorrecto!"+RESET);
@@ -125,15 +125,13 @@ public class JavaQuiz {
                             System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
                             break;
                     }
-                    System.out.println("Pregunta 5. ¿Cómo se denomina en Java a una estructura de datos estática que permite almacenar múltiples elementos del mismo tipo de forma secuencial?");
-                    System.out.println("A) Array B) Scanner C) switch");
+                    System.out.println("Pregunta 5. ¿If sirve para?");
+                    System.out.println("A) almacenar distintos elementos B) hacer saltos de linea C) revisar que condiciones se cumplen");
                     System.out.println("Respuesta: ");
                     respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
                     switch (respuesta) {
                         case 'A':
-                            correcta=1;
-                            aciertos=aciertos+correcta;
-                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            System.out.println(ROJO + "¡Incorrecto!" + RESET);
                             
                             break;
                         case 'B':
@@ -141,7 +139,9 @@ public class JavaQuiz {
                             
                             break;
                         case 'C':
-                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            correcta=1;
+                            aciertos= aciertos+correcta;
+                            System.out.println(VERDE + "¡Correcta!" + RESET);
                             
                             break;
                     
@@ -149,8 +149,8 @@ public class JavaQuiz {
                             System.out.println("Solo se acepta A-B-C,no ganas ningun punto");
                             break;
                     }
-                    System.out.println("Pregunta 6. ¿Qué palabra clave se utiliza en la cabecera de un método en Java para indicar que este pertenece a la clase en sí y no necesita una instancia o bjeto para ser ejecutado?");
-                    System.out.println("A) void B) private C) static");
+                    System.out.println("Pregunta 6. ¿[][] indican que un Array es?");
+                    System.out.println("A) Un array tridimensional B) Un array bidimensional C) Un array condicional");
                     System.out.println("Respuesta: ");
                     respuesta=sc.next().toUpperCase().charAt(0); // Lee la letra y la pasa a mayúscula automáticamente
                     switch (respuesta) {
@@ -158,13 +158,13 @@ public class JavaQuiz {
                             System.out.println(ROJO+"¡Incorrecto!"+RESET);
                             break;
                         case 'B':
-                            System.out.println(ROJO+"¡Incorrecto!"+RESET);
+                            correcta=1;
+                            aciertos=aciertos+correcta;
+                            System.out.println(VERDE + "¡Correcto!" + RESET);
                             break;
                         case 'C':
                             
-                            correcta=1;
-                            aciertos=aciertos+correcta;
-                            System.out.println(VERDE+"¡Correcto!"+RESET);
+                            System.out.println(ROJO + "¡Incorrecto!");
                             break;
                     
                         default:
